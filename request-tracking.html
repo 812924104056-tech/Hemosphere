@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="HemoSphere Blood Request Tracking">
+
+    <title>Request Tracking | HemoSphere</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Request Tracking CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/request-tracking.css">
+    <link rel="stylesheet" href="../css/theme.css">    
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Brand -->
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <div>
+                <h2>HemoSphere</h2>
+
+                <span>
+                    Intelligent Blood Response
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- Navigation -->
+
+        <nav class="side-nav">
+
+            <a href="dashboard.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-grid-2"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="donor-profile.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Donor Profile</span>
+
+            </a>
+
+
+            <a href="search.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <span>Find Donors</span>
+
+            </a>
+
+
+            <a href="blood-request.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-hand-holding-droplet"></i>
+
+                <span>Blood Request</span>
+
+            </a>
+
+
+            <a href="donor-matching.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-people-arrows"></i>
+
+                <span>Donor Matching</span>
+
+            </a>
+
+
+            <a href="request-tracking.html"
+                class="nav-item active">
+
+                <i class="fa-solid fa-route"></i>
+
+                <span>Request Tracking</span>
+
+            </a>
+
+
+            <a href="notification.html"
+                class="nav-item">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>Notifications</span>
+
+                <span class="notification-count">
+                    3
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+            <div class="profile-mini">
+
+                <div class="avatar">
+                    MM
+                </div>
+
+                <div>
+                    <strong>Moulishwaran</strong>
+
+                    <small>
+                        Requester
+                    </small>
+                </div>
+
+            </div>
+
+
+            <button
+                class="logout-btn"
+                id="logoutBtn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="topbar-title">
+
+                <span>
+                    HEMOSPHERE / REQUESTS
+                </span>
+
+                <h1>
+                    Request Tracking
+                </h1>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <a href="notification.html"
+                    class="icon-btn"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </a>
+
+
+                <a href="donor-profile.html"
+                    class="top-profile">
+
+                    <div class="avatar">
+                        MM
+                    </div>
+
+                    <div class="top-profile-info">
+
+                        <strong>
+                            Moulishwaran
+                        </strong>
+
+                        <small>
+                            My Account
+                        </small>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             PAGE CONTENT
+        ================================================== -->
+
+        <section class="tracking-page">
+
+
+            <!-- Back -->
+
+            <a href="dashboard.html"
+                class="back-link">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Dashboard
+
+            </a>
+
+
+
+            <!-- =================================================
+                 PAGE HEADER
+            ================================================== -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        LIVE REQUEST MONITOR
+                    </span>
+
+                    <h2>
+                        Track your blood request
+                    </h2>
+
+                    <p>
+                        Follow your request progress,
+                        donor matching status, and
+                        response updates in one place.
+                    </p>
+
+                </div>
+
+
+                <div class="tracking-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        Active Request
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 REQUEST ID CARD
+            ================================================== -->
+
+            <div class="request-id-card">
+
+                <div class="request-id-left">
+
+                    <div class="request-icon">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            REQUEST ID
+                        </span>
+
+                        <h3>
+                            HS-REQ-2026-0842
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="request-meta">
+
+                    <div>
+
+                        <span>Created</span>
+
+                        <strong>
+                            31 Jul 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Priority</span>
+
+                        <strong class="urgent">
+                            Urgent
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Blood Group</span>
+
+                        <strong class="blood">
+                            O+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="share-btn"
+                    id="shareBtn">
+
+                    <i class="fa-solid fa-share-nodes"></i>
+
+                    Share
+
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROGRESS CARD
+            ================================================== -->
+
+            <div class="progress-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span>
+                            REQUEST PROGRESS
+                        </span>
+
+                        <h3>
+                            Your request is being processed
+                        </h3>
+
+                    </div>
+
+
+                    <strong class="progress-percent">
+                        75%
+                    </strong>
+
+                </div>
+
+
+                <!-- Progress Bar -->
+
+                <div class="progress-track">
+
+                    <div
+                        class="progress-fill"
+                        style="width: 75%;">
+                    </div>
+
+                </div>
+
+
+                <div class="progress-note">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        Donor matching is currently in
+                        progress. We will notify you when
+                        a suitable donor responds.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TWO COLUMN AREA
+            ================================================== -->
+
+            <div class="tracking-grid">
+
+
+                <!-- =================================================
+                     LEFT — TIMELINE
+                ================================================== -->
+
+                <div class="timeline-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span>
+                                REQUEST JOURNEY
+                            </span>
+
+                            <h3>
+                                Status timeline
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline">
+
+
+                        <!-- Completed -->
+
+                        <div class="timeline-item completed">
+
+                            <div class="timeline-marker">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </div>
+
+
+                            <div class="timeline-content">
+
+                                <div class="timeline-title">
+
+                                    <h4>
+                                        Request Submitted
+                                    </h4>
+
+                                    <span>
+                                        09:15 AM
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Your blood request was
+                                    successfully submitted.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Completed -->
+
+                        <div class="timeline-item completed">
+
+                            <div class="timeline-marker">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </div>
+
+
+                            <div class="timeline-content">
+
+                                <div class="timeline-title">
+
+                                    <h4>
+                                        Request Verified
+                                    </h4>
+
+                                    <span>
+                                        09:22 AM
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Request information has
+                                    been reviewed and verified.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Active -->
+
+                        <div class="timeline-item active">
+
+                            <div class="timeline-marker">
+
+                                <i class="fa-solid fa-people-arrows"></i>
+
+                            </div>
+
+
+                            <div class="timeline-content">
+
+                                <div class="timeline-title">
+
+                                    <h4>
+                                        Finding Compatible Donors
+                                    </h4>
+
+                                    <span>
+                                        In Progress
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    HemoSphere is searching for
+                                    suitable donors based on
+                                    blood group and location.
+                                </p>
+
+
+                                <div class="timeline-action">
+
+                                    <a href="donor-matching.html">
+
+                                        View Matching Donors
+
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Pending -->
+
+                        <div class="timeline-item pending">
+
+                            <div class="timeline-marker">
+
+                                <i class="fa-solid fa-bell"></i>
+
+                            </div>
+
+
+                            <div class="timeline-content">
+
+                                <div class="timeline-title">
+
+                                    <h4>
+                                        Donor Confirmation
+                                    </h4>
+
+                                    <span>
+                                        Waiting
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    Waiting for a compatible
+                                    donor to accept the request.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Pending -->
+
+                        <div class="timeline-item pending">
+
+                            <div class="timeline-marker">
+
+                                <i class="fa-solid fa-heart-pulse"></i>
+
+                            </div>
+
+
+                            <div class="timeline-content">
+
+                                <div class="timeline-title">
+
+                                    <h4>
+                                        Donation Completed
+                                    </h4>
+
+                                    <span>
+                                        Upcoming
+                                    </span>
+
+                                </div>
+
+                                <p>
+                                    The request will be marked
+                                    completed after donation
+                                    confirmation.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     RIGHT — REQUEST DETAILS
+                ================================================== -->
+
+                <div class="side-column">
+
+
+                    <!-- Request Details -->
+
+                    <div class="details-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span>
+                                    REQUEST INFORMATION
+                                </span>
+
+                                <h3>
+                                    Request details
+                                </h3>
+
+                            </div>
+
+
+                            <a href="request-details.html"
+                                class="small-link">
+
+                                View
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="detail-list">
+
+                            <div class="detail-row">
+
+                                <div class="detail-icon red">
+
+                                    <i class="fa-solid fa-droplet"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Blood Group
+                                    </span>
+
+                                    <strong>
+                                        O Positive (O+)
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-row">
+
+                                <div class="detail-icon blue">
+
+                                    <i class="fa-solid fa-flask"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Required Units
+                                    </span>
+
+                                    <strong>
+                                        2 Units
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-row">
+
+                                <div class="detail-icon orange">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Location
+                                    </span>
+
+                                    <strong>
+                                        City Care Hospital
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-row">
+
+                                <div class="detail-icon purple">
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Needed By
+                                    </span>
+
+                                    <strong>
+                                        Today, 06:00 PM
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Donor Matching -->
+
+                    <div class="match-card">
+
+                        <div class="match-card-top">
+
+                            <div class="match-card-icon">
+
+                                <i class="fa-solid fa-user-group"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    DONOR MATCHING
+                                </span>
+
+                                <h3>
+                                    12 potential donors
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="match-stat">
+
+                            <div>
+
+                                <strong>
+                                    8
+                                </strong>
+
+                                <span>
+                                    Nearby
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    5
+                                </strong>
+
+                                <span>
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    3
+                                </strong>
+
+                                <span>
+                                    Responded
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="donor-matching.html"
+                            class="match-btn">
+
+                            Open Donor Matching
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- Need Help -->
+
+                    <div class="help-card">
+
+                        <div class="help-icon">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Need help?
+                            </h3>
+
+                            <p>
+                                Our support team can help
+                                you with your request.
+                            </p>
+
+                            <a href="notification.html">
+
+                                Contact Support
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LIVE UPDATE
+            ================================================== -->
+
+            <div class="update-card">
+
+                <div class="update-icon">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+
+                <div class="update-content">
+
+                    <span>
+                        LATEST UPDATE
+                    </span>
+
+                    <h3>
+                        Donor matching is actively searching
+                    </h3>
+
+                    <p>
+                        HemoSphere is checking compatible
+                        donors near the requested location.
+                        The page will show the latest response
+                        as soon as it becomes available.
+                    </p>
+
+                </div>
+
+
+                <span class="updated-time">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    Updated just now
+
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FOOTER NOTE
+            ================================================== -->
+
+            <div class="privacy-note">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Your request information is handled
+                    securely and is only shared with
+                    relevant donor matching services.
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Request Tracking JS -->
+
+    <script src="../js/request-tracking.js"></script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>

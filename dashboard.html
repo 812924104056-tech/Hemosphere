@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="HemoSphere intelligent blood donation and emergency response dashboard.">
+
+    <title>Dashboard | HemoSphere</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Dashboard CSS -->
+     <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet"
+        href="../css/dashboard.css">
+
+        
+</head>
+
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <div>
+                <h2>HemoSphere</h2>
+                <span>Emergency Response</span>
+            </div>
+
+        </div>
+
+
+        <nav class="side-nav">
+
+            <a href="dashboard.html"
+                class="nav-item active">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="search.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <span>Find Donors</span>
+
+            </a>
+
+
+            <a href="blood-request.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-hand-holding-droplet"></i>
+
+                <span>Blood Request</span>
+
+            </a>
+
+
+            <a href="donor-profile.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Donor Profile</span>
+
+            </a>
+
+
+            <a href="request-tracking.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-route"></i>
+
+                <span>Track Request</span>
+
+            </a>
+
+
+            <a href="notification.html"
+                class="nav-item">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>Notifications</span>
+
+                <b class="notification-count">3</b>
+
+            </a>
+
+        </nav>
+        <button
+    class="theme-toggle"
+    id="themeToggle"
+    aria-label="Switch to dark mode"
+    title="Dark Mode">
+
+    <i class="fa-solid fa-moon"></i>
+
+</button>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="donor-profile.html"
+                class="profile-mini">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div>
+                    <strong id="sideUserName">
+                        Moulishwaran
+                    </strong>
+
+                    <small>
+                        View Profile
+                    </small>
+                </div>
+
+            </a>
+
+
+            <button
+                class="logout-btn"
+                id="logoutBtn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button
+                class="menu-btn"
+                id="menuBtn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="topbar-title">
+
+                <span>HemoSphere</span>
+
+                <h1>Dashboard</h1>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <a href="notification.html"
+                    class="icon-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </a>
+
+
+                <a href="donor-profile.html"
+                    class="top-profile">
+
+                    <div class="avatar">
+                        M
+                    </div>
+
+                    <div class="top-profile-info">
+
+                        <strong id="topUserName">
+                            Moulishwaran
+                        </strong>
+
+                        <small>
+                            User
+                        </small>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+
+        <div class="dashboard-container">
+
+
+            <!-- ================= WELCOME ================= -->
+
+            <section class="welcome-section">
+
+                <div>
+
+                    <span class="welcome-label">
+                        GOOD TO SEE YOU
+                    </span>
+
+                    <h2>
+                        Welcome back,
+                        <span id="welcomeName">
+                            Moulishwaran
+                        </span> 👋
+                    </h2>
+
+                    <p>
+                        Manage blood requests, discover donors,
+                        and help someone in need today.
+                    </p>
+
+                </div>
+
+
+                <div class="status-pill">
+
+                    <span class="status-dot"></span>
+
+                    Platform Active
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= EMERGENCY BANNER ================= -->
+
+            <section class="emergency-banner">
+
+                <div class="emergency-content">
+
+                    <div class="emergency-icon">
+
+                        <i class="fa-solid fa-heart-pulse"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            NEED BLOOD URGENTLY?
+                        </span>
+
+                        <h3>
+                            Create an emergency blood request
+                        </h3>
+
+                        <p>
+                            Find compatible donors based on
+                            blood group and availability.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a href="blood-request.html"
+                    class="emergency-btn">
+
+                           Request Blood
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </section>
+
+
+            <!-- ================= STATS ================= -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blood">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Blood Requests
+                        </span>
+
+                        <strong id="requestCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon donor">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Available Donors
+                        </span>
+
+                        <strong id="donorCount">
+                            24
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon match">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Donor Matches
+                        </span>
+
+                        <strong id="matchCount">
+                            8
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon help">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Lives Supported
+                        </span>
+
+                        <strong id="lifeCount">
+                            12
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= QUICK ACTIONS ================= -->
+
+            <section class="section-block">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            QUICK ACCESS
+                        </span>
+
+                        <h2>
+                            What do you need?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-grid">
+
+
+                    <a href="search.html"
+                        class="quick-card">
+
+                        <div class="quick-icon blue">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Find a Donor
+                            </h3>
+
+                            <p>
+                                Search donors by blood group
+                                and location.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+
+                    </a>
+
+
+                    <a href="blood-request.html"
+                        class="quick-card">
+
+                        <div class="quick-icon red">
+
+                            <i class="fa-solid fa-hand-holding-droplet"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Request Blood
+                            </h3>
+
+                            <p>
+                                Create a new blood request
+                                for an emergency.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+
+                    </a>
+
+
+                    <a href="donor-profile.html"
+                        class="quick-card">
+
+                        <div class="quick-icon green">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Become a Donor
+                            </h3>
+
+                            <p>
+                                Update your donor details
+                                and availability.
+                            </p>
+
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow-icon"></i>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= BOTTOM GRID ================= -->
+
+            <section class="bottom-grid">
+
+
+                <!-- RECENT REQUESTS -->
+
+                <div class="dashboard-card recent-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="section-label">
+                                ACTIVITY
+                            </span>
+
+                            <h2>
+                                Recent Requests
+                            </h2>
+
+                        </div>
+
+
+                        <a href="request-tracking.html">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div id="recentRequests"
+                        class="recent-list">
+
+                        <!-- JS content -->
+
+                        <div class="empty-state">
+
+                            <div>
+                                <i class="fa-regular fa-folder-open"></i>
+                            </div>
+
+                            <h3>
+                                No requests yet
+                            </h3>
+
+                            <p>
+                                Your recent blood requests
+                                will appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BLOOD GROUPS -->
+
+                <div class="dashboard-card blood-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="section-label">
+                                DONOR NETWORK
+                            </span>
+
+                            <h2>
+                                Blood Availability
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="blood-list">
+
+
+                        <div class="blood-row">
+
+                            <div class="blood-type">
+                                A+
+                            </div>
+
+                            <div class="availability">
+
+                                <div class="availability-top">
+
+                                    <span>
+                                        Available donors
+                                    </span>
+
+                                    <strong>
+                                        8
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width: 80%;"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="blood-row">
+
+                            <div class="blood-type">
+                                B+
+                            </div>
+
+                            <div class="availability">
+
+                                <div class="availability-top">
+
+                                    <span>
+                                        Available donors
+                                    </span>
+
+                                    <strong>
+                                        6
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width: 60%;"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="blood-row">
+
+                            <div class="blood-type">
+                                O+
+                            </div>
+
+                            <div class="availability">
+
+                                <div class="availability-top">
+
+                                    <span>
+                                        Available donors
+                                    </span>
+
+                                    <strong>
+                                        10
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width: 90%;"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="blood-row">
+
+                            <div class="blood-type">
+                                AB+
+                            </div>
+
+                            <div class="availability">
+
+                                <div class="availability-top">
+
+                                    <span>
+                                        Available donors
+                                    </span>
+
+                                    <strong>
+                                        4
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress">
+                                    <span style="width: 40%;"></span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <a href="search.html"
+                        class="view-donors-btn">
+
+                        Explore all donors
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= FOOTER NOTE ================= -->
+
+            <div class="dashboard-note">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <span><h3>
+                    HemoSphere connects people with blood donors
+                    through a secure and organized emergency response platform.</h3>
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- Dashboard JS -->
+<script src="../js/theme.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

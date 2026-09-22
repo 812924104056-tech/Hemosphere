@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Notifications | HemoSphere</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/notification.css"
+    >
+    <link rel="stylesheet" href="../css/theme.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         BACKGROUND DECORATION
+    ========================================== -->
+
+    <div class="background-glow glow-one"></div>
+
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- =========================================
+         MAIN WRAPPER
+    ========================================== -->
+
+    <div class="app-wrapper">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <a
+                href="dashboard.html"
+                class="logo"
+            >
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </span>
+
+                <span class="logo-text">
+                    Hemo<span>Sphere</span>
+                </span>
+
+            </a>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-grid-2"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="search.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Find Donor</span>
+                </a>
+
+                <a href="blood-request.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    <span>Blood Request</span>
+                </a>
+
+                <a href="donor-matching.html">
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                    <span>Donor Matching</span>
+                </a>
+
+                <a href="request-tracking.html">
+                    <i class="fa-solid fa-route"></i>
+                    <span>Track Request</span>
+                </a>
+
+                <a
+                    href="notification.html"
+                    class="active"
+                >
+                    <i class="fa-solid fa-bell"></i>
+                    <span>Notifications</span>
+                    <b id="sidebarNotificationCount">4</b>
+                </a>
+
+                <a href="donor-profile.html">
+                    <i class="fa-regular fa-user"></i>
+                    <span>My Profile</span>
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="help-box">
+
+                    <div class="help-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <div>
+                        <strong>Need Help?</strong>
+                        <span>Contact support</span>
+                    </div>
+
+                </div>
+
+<a href="../index.html" class="logout-link">
+              
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                    <span>Logout</span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             MAIN AREA
+        ====================================== -->
+
+        <main class="main-area">
+
+
+            <!-- =================================
+                 TOPBAR
+            ================================== -->
+
+            <header class="topbar">
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenu"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div class="topbar-left">
+
+                    <span class="mini-label">
+                        HEMOSPHERE CENTER
+                    </span>
+
+                    <h1>
+                        Notification Center
+                    </h1>
+
+                </div>
+
+
+                <div class="topbar-right">
+
+                    <div class="status-online">
+
+                        <span></span>
+
+                        System Online
+
+                    </div>
+
+
+                    <div class="top-profile">
+
+                        <div class="profile-avatar">
+                            MM
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Moulishwaran
+                            </strong>
+
+                            <span>
+                                Member
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 CONTENT
+            ================================== -->
+
+            <section class="content">
+
+
+                <!-- =================================
+                     HERO
+                ================================== -->
+
+                <div class="notification-hero">
+
+                    <div class="hero-content">
+
+                        <div class="hero-icon">
+
+                            <i class="fa-solid fa-bell"></i>
+
+                            <span class="pulse"></span>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="hero-label">
+                                REAL-TIME ALERTS
+                            </span>
+
+                            <h2>
+                                Stay connected.
+                                <span>Save lives.</span>
+                            </h2>
+
+                            <p>
+                                Important updates about blood requests,
+                                donor responses and emergency matches
+                                appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong id="unreadCount">
+                            4
+                        </strong>
+
+                        <span>
+                            Unread
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     TOOLBAR
+                ================================== -->
+
+                <div class="notification-toolbar">
+
+
+                    <div class="filter-tabs">
+
+                        <button
+                            class="filter-btn active"
+                            data-filter="all"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="unread"
+                        >
+                            Unread
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="request"
+                        >
+                            Requests
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="donation"
+                        >
+                            Donations
+                        </button>
+
+                    </div>
+
+
+                    <div class="toolbar-actions">
+
+                        <button
+                            id="markAllBtn"
+                            type="button"
+                        >
+
+                            <i class="fa-solid fa-check-double"></i>
+
+                            Mark all as read
+
+                        </button>
+
+
+                        <button
+                            id="clearAllBtn"
+                            type="button"
+                            class="clear-btn"
+                        >
+
+                            <i class="fa-regular fa-trash-can"></i>
+
+                            Clear all
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     NOTIFICATION LIST
+                ================================== -->
+
+                <div
+                    id="notificationList"
+                    class="notification-list"
+                >
+
+
+                    <!-- Notification 1 -->
+
+                    <article
+                        class="notification-card unread"
+                        data-type="request"
+                        data-id="N001"
+                    >
+
+                        <div class="notification-icon emergency">
+
+                            <i class="fa-solid fa-droplet"></i>
+
+                        </div>
+
+
+                        <div class="notification-body">
+
+                            <div class="notification-heading">
+
+                                <h3>
+                                    Urgent Blood Request
+                                </h3>
+
+                                <span class="new-badge">
+                                    NEW
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                An urgent <strong>O+ blood</strong>
+                                request has been created near
+                                your registered location.
+                            </p>
+
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    3.2 km away
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    8 minutes ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="view-btn"
+                                type="button"
+                            >
+                                View Request
+                            </button>
+
+                            <button
+                                class="delete-btn"
+                                type="button"
+                                aria-label="Delete notification"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Notification 2 -->
+
+                    <article
+                        class="notification-card unread"
+                        data-type="donation"
+                        data-id="N002"
+                    >
+
+                        <div class="notification-icon success">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                        </div>
+
+
+                        <div class="notification-body">
+
+                            <div class="notification-heading">
+
+                                <h3>
+                                    Donor Match Found
+                                </h3>
+
+                                <span class="new-badge">
+                                    NEW
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                A compatible donor has been found
+                                for your <strong>O+ request</strong>.
+                                Open the request to view details.
+                            </p>
+
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-user-check"></i>
+                                    96% Match
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    18 minutes ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="view-btn"
+                                type="button"
+                            >
+                                View Match
+                            </button>
+
+                            <button
+                                class="delete-btn"
+                                type="button"
+                                aria-label="Delete notification"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Notification 3 -->
+
+                    <article
+                        class="notification-card unread"
+                        data-type="request"
+                        data-id="N003"
+                    >
+
+                        <div class="notification-icon info">
+
+                            <i class="fa-solid fa-user-clock"></i>
+
+                        </div>
+
+
+                        <div class="notification-body">
+
+                            <div class="notification-heading">
+
+                                <h3>
+                                    Donor Response Pending
+                                </h3>
+
+                                <span class="new-badge">
+                                    NEW
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Your request <strong>HS-REQ-1024</strong>
+                                is waiting for a donor response.
+                            </p>
+
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-route"></i>
+                                    Request Tracking
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    35 minutes ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="view-btn"
+                                type="button"
+                            >
+                                Track Request
+                            </button>
+
+                            <button
+                                class="delete-btn"
+                                type="button"
+                                aria-label="Delete notification"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Notification 4 -->
+
+                    <article
+                        class="notification-card unread"
+                        data-type="donation"
+                        data-id="N004"
+                    >
+
+                        <div class="notification-icon donation">
+
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+
+                        </div>
+
+
+                        <div class="notification-body">
+
+                            <div class="notification-heading">
+
+                                <h3>
+                                    Donation Reminder
+                                </h3>
+
+                                <span class="new-badge">
+                                    NEW
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Your donor profile is active.
+                                Keep your availability updated so
+                                nearby patients can reach you.
+                            </p>
+
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                    Profile Reminder
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    1 hour ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="view-btn"
+                                type="button"
+                            >
+                                Update Profile
+                            </button>
+
+                            <button
+                                class="delete-btn"
+                                type="button"
+                                aria-label="Delete notification"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Notification 5 -->
+
+                    <article
+                        class="notification-card"
+                        data-type="request"
+                        data-id="N005"
+                    >
+
+                        <div class="notification-icon neutral">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+
+                        <div class="notification-body">
+
+                            <div class="notification-heading">
+
+                                <h3>
+                                    Request Successfully Created
+                                </h3>
+
+                            </div>
+
+
+                            <p>
+                                Your blood request
+                                <strong>HS-REQ-1024</strong>
+                                has been registered successfully.
+                            </p>
+
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    <i class="fa-solid fa-file-medical"></i>
+                                    Request Created
+                                </span>
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    2 hours ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-actions">
+
+                            <button
+                                class="view-btn"
+                                type="button"
+                            >
+                                View Request
+                            </button>
+
+                            <button
+                                class="delete-btn"
+                                type="button"
+                                aria-label="Delete notification"
+                            >
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- =================================
+                     EMPTY STATE
+                ================================== -->
+
+                <div
+                    id="emptyState"
+                    class="empty-state"
+                    hidden
+                >
+
+                    <div class="empty-icon">
+
+                        <i class="fa-regular fa-bell-slash"></i>
+
+                    </div>
+
+                    <h3>
+                        You're all caught up
+                    </h3>
+
+                    <p>
+                        No notifications are available in this section.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================
+                     PRIVACY NOTE
+                ================================== -->
+
+                <div class="privacy-note">
+
+                    <div class="privacy-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Your information is protected
+                        </strong>
+
+                        <p>
+                            HemoSphere notifications only show information
+                            required to coordinate blood donation and
+                            emergency response.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/notification.js"></script>
+<script src="../js/theme.js"></script>
+
+</body>
+
+</html>

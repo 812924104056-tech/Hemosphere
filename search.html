@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Find available blood donors near you with HemoSphere.">
+
+    <title>Find Blood Donors | HemoSphere</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Search CSS -->
+    <link rel="stylesheet"
+          href="../css/search.css">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar" id="sidebar">
+
+    <!-- Brand -->
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            <i class="fa-solid fa-droplet"></i>
+        </div>
+
+        <div>
+            <h2>HemoSphere</h2>
+
+            <span>
+                Emergency Response
+            </span>
+        </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+
+    <nav class="side-nav">
+
+        <a href="dashboard.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a href="search.html"
+           class="nav-item active">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <span>
+                Find Donors
+            </span>
+
+        </a>
+
+
+        <a href="blood-request.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-hand-holding-droplet"></i>
+
+            <span>
+                Blood Request
+            </span>
+
+        </a>
+
+
+        <a href="donor-profile.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>
+                Donor Profile
+            </span>
+
+        </a>
+
+
+        <a href="request-tracking.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-route"></i>
+
+            <span>
+                Track Request
+            </span>
+
+        </a>
+
+
+        <a href="notification.html"
+           class="nav-item">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span>
+                Notifications
+            </span>
+
+            <b class="notification-count">
+                3
+            </b>
+
+        </a>
+
+    </nav>
+
+
+    <!-- Sidebar Bottom -->
+
+    <div class="sidebar-bottom">
+
+        <div class="profile-mini">
+
+            <div class="avatar">
+                M
+            </div>
+
+            <div>
+
+                <strong>
+                    Moulishwaran
+                </strong>
+
+                <small>
+                    Donor Account
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="logout-btn"
+            id="logoutBtn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content">
+
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+        <button
+            class="menu-btn"
+            id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <div class="topbar-title">
+
+            <span>
+                HemoSphere
+            </span>
+
+            <h1>
+                Find Blood Donors
+            </h1>
+
+        </div>
+
+
+        <div class="topbar-actions">
+
+            <a href="notification.html"
+               class="icon-btn">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="donor-profile.html"
+               class="top-profile">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div class="top-profile-info">
+
+                    <strong>
+                        Moulishwaran
+                    </strong>
+
+                    <small>
+                        Donor
+                    </small>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         PAGE CONTENT
+    ================================================= -->
+
+    <div class="search-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <span class="page-label">
+                    DONOR NETWORK
+                </span>
+
+                <h2>
+                    Find a Blood Donor
+                </h2>
+
+                <p>
+                    Search for available donors based on
+                    blood group and location.
+                </p>
+
+            </div>
+
+
+            <div class="network-status">
+
+                <span class="status-dot"></span>
+
+                Live Donor Network
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SEARCH PANEL
+        ================================================= -->
+
+        <section class="search-panel">
+
+
+            <div class="search-panel-header">
+
+                <div class="search-icon">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>
+                        Search Donors
+                    </h3>
+
+                    <p>
+                        Choose the details you need
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-form">
+
+
+                <!-- Blood Group -->
+
+                <div class="form-group">
+
+                    <label for="bloodGroup">
+                        Blood Group
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                        <select id="bloodGroup">
+
+                            <option value="">
+                                Select blood group
+                            </option>
+
+                            <option value="A+">
+                                A+
+                            </option>
+
+                            <option value="A-">
+                                A-
+                            </option>
+
+                            <option value="B+">
+                                B+
+                            </option>
+
+                            <option value="B-">
+                                B-
+                            </option>
+
+                            <option value="AB+">
+                                AB+
+                            </option>
+
+                            <option value="AB-">
+                                AB-
+                            </option>
+
+                            <option value="O+">
+                                O+
+                            </option>
+
+                            <option value="O-">
+                                O-
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Location -->
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Enter city or area">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Radius -->
+
+                <div class="form-group">
+
+                    <label for="radius">
+                        Search Radius
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-arrows-left-right"></i>
+
+                        <select id="radius">
+
+                            <option value="5">
+                                Within 5 km
+                            </option>
+
+                            <option value="10" selected>
+                                Within 10 km
+                            </option>
+
+                            <option value="25">
+                                Within 25 km
+                            </option>
+
+                            <option value="50">
+                                Within 50 km
+                            </option>
+
+                            <option value="100">
+                                Within 100 km
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Search Button -->
+
+                <button
+                    type="button"
+                    class="search-btn"
+                    id="searchBtn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <span>
+                        Find Donors
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Quick Filters -->
+
+            <div class="quick-filters">
+
+                <span>
+                    Quick filters:
+                </span>
+
+                <button
+                    class="filter-chip active"
+                    data-blood="O+">
+
+                    O+
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-blood="A+">
+
+                    A+
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-blood="B+">
+
+                    B+
+
+                </button>
+
+                <button
+                    class="filter-chip"
+                    data-blood="AB+">
+
+                    AB+
+
+                </button>
+
+                <button
+                    class="clear-filter"
+                    id="clearFilter">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SEARCH INFO
+        ================================================= -->
+
+        <section class="search-info">
+
+            <div class="info-item">
+
+                <div class="info-icon green">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Available Donors
+                    </strong>
+
+                    <span>
+                        Ready to respond
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <div class="info-icon blue">
+
+                    <i class="fa-solid fa-location-crosshairs"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Nearby Matching
+                    </strong>
+
+                    <span>
+                        Based on your location
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <div class="info-icon red">
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Trusted Network
+                    </strong>
+
+                    <span>
+                        Verified donor profiles
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESULTS HEADER
+        ================================================= -->
+
+        <section class="results-header">
+
+            <div>
+
+                <span class="section-label">
+                    MATCHING RESULTS
+                </span>
+
+                <h3>
+                    Available Donors
+                </h3>
+
+            </div>
+
+
+            <div class="result-count">
+
+                <strong id="resultCount">
+                    4
+                </strong>
+
+                <span>
+                    donors found
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DONOR RESULTS
+        ================================================= -->
+
+        <section
+            class="donor-list"
+            id="donorList">
+
+
+            <!-- DONOR CARD 1 -->
+
+            <article
+                class="donor-card"
+                data-blood="O+"
+                data-location="Chennai">
+
+                <div class="donor-avatar">
+                    A
+
+                    <span class="online-dot"></span>
+                </div>
+
+
+                <div class="donor-info">
+
+                    <div class="donor-name">
+
+                        <h4>
+                            Arjun Kumar
+                        </h4>
+
+                        <span class="verified">
+                            <i class="fa-solid fa-check"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chennai • 3.2 km away
+                    </p>
+
+                    <span class="available-text">
+                        <i class="fa-solid fa-circle"></i>
+                        Available now
+                    </span>
+
+                </div>
+
+
+                <div class="blood-badge">
+                    O+
+                </div>
+
+
+                <div class="donor-action">
+
+                    <a
+                        href="request-details.html"
+                        class="view-btn">
+
+                        View Profile
+
+                    </a>
+
+                    <button
+                        class="contact-btn"
+                        data-name="Arjun Kumar">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        Contact
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DONOR CARD 2 -->
+
+            <article
+                class="donor-card"
+                data-blood="O+"
+                data-location="Chennai">
+
+                <div class="donor-avatar avatar-blue">
+                    S
+
+                    <span class="online-dot"></span>
+                </div>
+
+
+                <div class="donor-info">
+
+                    <div class="donor-name">
+
+                        <h4>
+                            Siva Prakash
+                        </h4>
+
+                        <span class="verified">
+                            <i class="fa-solid fa-check"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chennai • 5.8 km away
+                    </p>
+
+                    <span class="available-text">
+                        <i class="fa-solid fa-circle"></i>
+                        Available now
+                    </span>
+
+                </div>
+
+
+                <div class="blood-badge">
+                    O+
+                </div>
+
+
+                <div class="donor-action">
+
+                    <a
+                        href="request-details.html"
+                        class="view-btn">
+
+                        View Profile
+
+                    </a>
+
+                    <button
+                        class="contact-btn"
+                        data-name="Siva Prakash">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        Contact
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DONOR CARD 3 -->
+
+            <article
+                class="donor-card"
+                data-blood="A+"
+                data-location="Chennai">
+
+                <div class="donor-avatar avatar-purple">
+                    R
+
+                    <span class="online-dot"></span>
+                </div>
+
+
+                <div class="donor-info">
+
+                    <div class="donor-name">
+
+                        <h4>
+                            Rahul Dev
+                        </h4>
+
+                        <span class="verified">
+                            <i class="fa-solid fa-check"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chennai • 7.4 km away
+                    </p>
+
+                    <span class="available-text">
+                        <i class="fa-solid fa-circle"></i>
+                        Available now
+                    </span>
+
+                </div>
+
+
+                <div class="blood-badge blood-a">
+                    A+
+                </div>
+
+
+                <div class="donor-action">
+
+                    <a
+                        href="request-details.html"
+                        class="view-btn">
+
+                        View Profile
+
+                    </a>
+
+                    <button
+                        class="contact-btn"
+                        data-name="Rahul Dev">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        Contact
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DONOR CARD 4 -->
+
+            <article
+                class="donor-card"
+                data-blood="B+"
+                data-location="Chennai">
+
+                <div class="donor-avatar avatar-orange">
+                    K
+
+                    <span class="online-dot"></span>
+                </div>
+
+
+                <div class="donor-info">
+
+                    <div class="donor-name">
+
+                        <h4>
+                            Karthik Raj
+                        </h4>
+
+                        <span class="verified">
+                            <i class="fa-solid fa-check"></i>
+                            Verified
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chennai • 9.1 km away
+                    </p>
+
+                    <span class="available-text">
+                        <i class="fa-solid fa-circle"></i>
+                        Available now
+                    </span>
+
+                </div>
+
+
+                <div class="blood-badge blood-b">
+                    B+
+                </div>
+
+
+                <div class="donor-action">
+
+                    <a
+                        href="request-details.html"
+                        class="view-btn">
+
+                        View Profile
+
+                    </a>
+
+                    <button
+                        class="contact-btn"
+                        data-name="Karthik Raj">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        Contact
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             EMPTY STATE
+        ================================================= -->
+
+        <section
+            class="empty-state"
+            id="emptyState">
+
+            <div class="empty-icon">
+
+                <i class="fa-solid fa-user-slash"></i>
+
+            </div>
+
+            <h3>
+                No matching donors found
+            </h3>
+
+            <p>
+                Try another blood group or increase
+                your search radius.
+            </p>
+
+            <button
+                id="resetSearch">
+
+                Reset Search
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SAFETY NOTE
+        ================================================= -->
+
+        <div class="safety-note">
+
+            <i class="fa-solid fa-shield-heart"></i>
+
+            <div>
+
+                <strong>
+                    HemoSphere Safety Note
+                </strong>
+
+                <p>
+                    Always confirm donor availability before
+                    making an emergency request. Donor contact
+                    information should be used only for genuine
+                    blood donation needs.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- Search JavaScript -->
+
+<script src="../js/search.js"></script>
+
+</body>
+</html>

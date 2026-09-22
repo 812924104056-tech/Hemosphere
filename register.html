@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register as Donor | HemoSphere</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <!-- Register CSS -->
+    <link rel="stylesheet" href="../css/register.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         REGISTER PAGE
+    =========================================== -->
+
+    <main class="register-page">
+
+
+        <!-- ======================================
+             LEFT INFORMATION PANEL
+        ======================================= -->
+
+        <section class="register-info">
+
+            <a href="../index.html" class="brand">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <span>HemoSphere</span>
+
+            </a>
+
+
+            <div class="register-info-content">
+
+                <span class="info-tag">
+                    Become a Blood Donor
+                </span>
+
+
+                <h1>
+                    Your One Decision
+                    <br>
+                    Can <span>Save a Life.</span>
+                </h1>
+
+
+                <p>
+                    Create your HemoSphere donor profile and make
+                    yourself available when someone nearby needs
+                    your blood group.
+                </p>
+
+
+                <div class="info-points">
+
+                    <div class="info-point">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                        <span>
+                            Register your blood group
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-point">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            Connect with nearby blood requests
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-point">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        <span>
+                            Receive emergency donor requests
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-point">
+
+                        <i class="fa-solid fa-shield-heart"></i>
+
+                        <span>
+                            Control your donor availability
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-footer">
+
+                <p>
+                    HemoSphere — Connecting Donors. Saving Lives.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             REGISTRATION SECTION
+        ======================================= -->
+
+        <section class="register-section">
+
+
+            <div class="register-card">
+
+
+                <!-- Mobile Brand -->
+
+                <div class="mobile-brand">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                    <span>HemoSphere</span>
+
+                </div>
+
+
+                <!-- Header -->
+
+                <div class="register-header">
+
+                    <span class="form-tag">
+                        Donor Registration
+                    </span>
+
+                    <h2>
+                        Create Your Profile
+                    </h2>
+
+                    <p>
+                        Join the HemoSphere donor community.
+                    </p>
+
+                </div>
+
+
+
+                <!-- ==================================
+                     REGISTRATION FORM
+                =================================== -->
+
+                <form
+                    id="registerForm"
+                    autocomplete="on"
+                    novalidate
+                >
+
+
+                    <!-- ==================================
+                         PERSONAL INFORMATION
+                    =================================== -->
+
+                    <div class="form-section-title">
+
+                        <span>01</span>
+
+                        <div>
+
+                            <h3>
+                                Personal Information
+                            </h3>
+
+                            <p>
+                                Tell us a little about yourself.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Name Row -->
+
+                    <div class="form-row">
+
+
+                        <!-- First Name -->
+
+                        <div class="form-group">
+
+                            <label for="firstName">
+                                First Name
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="Enter first name"
+                                    autocomplete="given-name"
+                                    required
+                                >
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="firstNameError"
+                            ></small>
+
+                        </div>
+
+
+                        <!-- Last Name -->
+
+                        <div class="form-group">
+
+                            <label for="lastName">
+                                Last Name
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    placeholder="Enter last name"
+                                    autocomplete="family-name"
+                                    required
+                                >
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="lastNameError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="registerEmail">
+                            Email Address
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="registerEmail"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="registerEmailError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter mobile number"
+                                autocomplete="tel"
+                                inputmode="tel"
+                                required
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="phoneError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         BLOOD INFORMATION
+                    =================================== -->
+
+                    <div class="form-section-title">
+
+                        <span>02</span>
+
+                        <div>
+
+                            <h3>
+                                Blood Information
+                            </h3>
+
+                            <p>
+                                Help us identify your donor profile.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Blood Group + Gender -->
+
+                    <div class="form-row">
+
+
+                        <!-- Blood Group -->
+
+                        <div class="form-group">
+
+                            <label for="bloodGroup">
+                                Blood Group
+                            </label>
+
+                            <div class="select-box">
+
+                                <i class="fa-solid fa-droplet"></i>
+
+                                <select
+                                    id="bloodGroup"
+                                    name="bloodGroup"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select blood group
+                                    </option>
+
+                                    <option value="A+">
+                                        A+
+                                    </option>
+
+                                    <option value="A-">
+                                        A-
+                                    </option>
+
+                                    <option value="B+">
+                                        B+
+                                    </option>
+
+                                    <option value="B-">
+                                        B-
+                                    </option>
+
+                                    <option value="AB+">
+                                        AB+
+                                    </option>
+
+                                    <option value="AB-">
+                                        AB-
+                                    </option>
+
+                                    <option value="O+">
+                                        O+
+                                    </option>
+
+                                    <option value="O-">
+                                        O-
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="bloodGroupError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- Gender -->
+
+                        <div class="form-group">
+
+                            <label for="gender">
+                                Gender
+                            </label>
+
+                            <div class="select-box">
+
+                                <i class="fa-solid fa-person"></i>
+
+                                <select
+                                    id="gender"
+                                    name="gender"
+                                >
+
+                                    <option value="">
+                                        Select gender
+                                    </option>
+
+                                    <option value="male">
+                                        Male
+                                    </option>
+
+                                    <option value="female">
+                                        Female
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                    <option value="prefer-not">
+                                        Prefer not to say
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Date of Birth -->
+
+                    <div class="form-group">
+
+                        <label for="dateOfBirth">
+                            Date of Birth
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-calendar"></i>
+
+                            <input
+                                type="date"
+                                id="dateOfBirth"
+                                name="dateOfBirth"
+                                required
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="dateOfBirthError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         LOCATION INFORMATION
+                    =================================== -->
+
+                    <div class="form-section-title">
+
+                        <span>03</span>
+
+                        <div>
+
+                            <h3>
+                                Location
+                            </h3>
+
+                            <p>
+                                Help patients find suitable donors nearby.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- State + City -->
+
+                    <div class="form-row">
+
+
+                        <!-- State -->
+
+                        <div class="form-group">
+
+                            <label for="state">
+                                State
+                            </label>
+
+                            <div class="select-box">
+
+                                <i class="fa-solid fa-map"></i>
+
+                                <select
+                                    id="state"
+                                    name="state"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select state
+                                    </option>
+
+                                    <option value="Tamil Nadu">
+                                        Tamil Nadu
+                                    </option>
+
+                                    <option value="Kerala">
+                                        Kerala
+                                    </option>
+
+                                    <option value="Karnataka">
+                                        Karnataka
+                                    </option>
+
+                                    <option value="Andhra Pradesh">
+                                        Andhra Pradesh
+                                    </option>
+
+                                    <option value="Telangana">
+                                        Telangana
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="stateError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- City -->
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-city"></i>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="Enter your city"
+                                    autocomplete="address-level2"
+                                    required
+                                >
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="cityError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Area -->
+
+                    <div class="form-group">
+
+                        <label for="area">
+                            Area / Locality
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <input
+                                type="text"
+                                id="area"
+                                name="area"
+                                placeholder="Enter your area"
+                                autocomplete="address-line1"
+                                required
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="areaError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         DONOR AVAILABILITY
+                    =================================== -->
+
+                    <div class="form-section-title">
+
+                        <span>04</span>
+
+                        <div>
+
+                            <h3>
+                                Donor Availability
+                            </h3>
+
+                            <p>
+                                Let others know when you may be available.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Availability -->
+
+                    <div class="availability-box">
+
+
+                        <label class="availability-option">
+
+                            <input
+                                type="radio"
+                                name="availability"
+                                value="available"
+                                required
+                            >
+
+                            <span class="availability-content">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <span>
+
+                                    <strong>
+                                        Available
+                                    </strong>
+
+                                    <small>
+                                        I can be contacted for blood requests.
+                                    </small>
+
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+
+                        <label class="availability-option">
+
+                            <input
+                                type="radio"
+                                name="availability"
+                                value="unavailable"
+                            >
+
+                            <span class="availability-content">
+
+                                <i class="fa-solid fa-clock"></i>
+
+                                <span>
+
+                                    <strong>
+                                        Temporarily Unavailable
+                                    </strong>
+
+                                    <small>
+                                        I am currently unavailable for donation.
+                                    </small>
+
+                                </span>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- Last Donation Date -->
+
+                    <div class="form-group">
+
+                        <label for="lastDonation">
+                            Last Blood Donation Date
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                            <input
+                                type="date"
+                                id="lastDonation"
+                                name="lastDonation"
+                            >
+
+                        </div>
+
+                        <small class="field-note">
+                            Leave blank if you have never donated blood.
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         ACCOUNT SECURITY
+                    =================================== -->
+
+                    <div class="form-section-title">
+
+                        <span>05</span>
+
+                        <div>
+
+                            <h3>
+                                Account Security
+                            </h3>
+
+                            <p>
+                                Protect your HemoSphere account.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Create Password
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="registerPassword"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="toggleRegisterPassword"
+                                aria-label="Show password"
+                            >
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="password-strength">
+
+                            <div class="strength-bar">
+
+                                <span id="strengthProgress"></span>
+
+                            </div>
+
+                            <small id="strengthText">
+                                Password strength
+                            </small>
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="registerPasswordError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- Confirm Password -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="toggleConfirmPassword"
+                                aria-label="Show password"
+                            >
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="confirmPasswordError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         TERMS
+                    =================================== -->
+
+                    <div class="terms-box">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required
+                            >
+
+                            <span>
+                                I agree to the
+                                <a href="#">
+                                    Terms & Conditions
+                                </a>
+                                and
+                                <a href="#">
+                                    Privacy Policy
+                                </a>.
+                            </span>
+
+                        </label>
+
+                        <small
+                            class="error-message"
+                            id="termsError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- ==================================
+                         SUBMIT
+                    =================================== -->
+
+                    <button
+                        type="submit"
+                        class="register-submit"
+                    >
+
+                        <span>
+                            Create Donor Account
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+
+                    <!-- Status -->
+
+                    <p
+                        id="registerMessage"
+                        class="register-message"
+                        aria-live="polite"
+                    ></p>
+
+
+                </form>
+
+
+
+                <!-- ==================================
+                     LOGIN LINK
+                =================================== -->
+
+                <div class="login-link">
+
+                    <p>
+                        Already have an account?
+                    </p>
+
+                    <a href="login.html">
+
+                        Sign In
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Back Home -->
+
+                <a
+                    href="../index.html"
+                    class="back-home"
+                >
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back to Home
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Register JavaScript -->
+
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Request Details | HemoSphere</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Request Details CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/request-details.css"
+    >
+    <link rel="stylesheet" href="../css/theme.css">
+</head>
+
+
+<body>
+
+    <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Brand -->
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <div>
+                <h2>HemoSphere</h2>
+                <span>Blood Response Platform</span>
+            </div>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <nav class="side-nav">
+
+            <a
+                href="dashboard.html"
+                class="nav-item"
+            >
+                <i class="fa-solid fa-grid-2"></i>
+                <span>Dashboard</span>
+            </a>
+
+
+            <a
+                href="search.html"
+                class="nav-item"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Find Donors</span>
+            </a>
+
+
+            <a
+                href="blood-request.html"
+                class="nav-item active"
+            >
+                <i class="fa-solid fa-droplet"></i>
+                <span>Blood Requests</span>
+            </a>
+
+
+            <a
+                href="donor-profile.html"
+                class="nav-item"
+            >
+                <i class="fa-solid fa-user"></i>
+                <span>My Profile</span>
+            </a>
+
+
+            <a
+                href="request-tracking.html"
+                class="nav-item"
+            >
+                <i class="fa-solid fa-route"></i>
+                <span>Track Request</span>
+            </a>
+
+
+            <a
+                href="notification.html"
+                class="nav-item"
+            >
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+
+                <b class="notification-count">
+                    3
+                </b>
+            </a>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <div class="profile-mini">
+
+                <div class="avatar">
+                    MM
+                </div>
+
+                <div>
+                    <strong>Moulishwaran</strong>
+                    <small>Blood Donor</small>
+                </div>
+
+            </div>
+
+
+            <button
+                class="logout-btn"
+                id="logoutBtn"
+            >
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- ==================================================
+             TOPBAR
+        =================================================== -->
+
+        <header class="topbar">
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <div class="topbar-title">
+
+                <span>Blood Request</span>
+
+                <h1>Request Details</h1>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <a
+                    href="notification.html"
+                    class="icon-btn"
+                    aria-label="Notifications"
+                >
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-dot"></span>
+
+                </a>
+
+
+                <a
+                    href="donor-profile.html"
+                    class="top-profile"
+                >
+
+                    <div class="avatar">
+                        MM
+                    </div>
+
+                    <div class="top-profile-info">
+
+                        <strong>Moulishwaran</strong>
+
+                        <small>Donor Account</small>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ==================================================
+             PAGE
+        =================================================== -->
+
+        <section class="request-page">
+
+
+            <!-- ==================================================
+                 BACK BUTTON
+            =================================================== -->
+
+            <a
+                href="blood-request.html"
+                class="back-link"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Blood Requests
+
+            </a>
+
+
+
+            <!-- ==================================================
+                 REQUEST HERO
+            =================================================== -->
+
+            <div class="request-hero">
+
+
+                <div class="hero-left">
+
+                    <div class="request-symbol">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <div class="hero-label">
+                            EMERGENCY BLOOD REQUEST
+                        </div>
+
+
+                        <h2>
+                            Blood Donation Request
+                        </h2>
+
+
+                        <p>
+                            A nearby patient needs urgent
+                            blood support. Your response
+                            could make a real difference.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>Urgent Request</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 REQUEST ID BAR
+            =================================================== -->
+
+            <div class="request-meta">
+
+                <div>
+
+                    <span>REQUEST ID</span>
+
+                    <strong>#HS-REQ-2048</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>CREATED</span>
+
+                    <strong>Today, 08:45 PM</strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>RESPONSE NEEDED</span>
+
+                    <strong>Within 2 hours</strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 MAIN GRID
+            =================================================== -->
+
+            <div class="details-grid">
+
+
+                <!-- ==================================================
+                     LEFT COLUMN
+                =================================================== -->
+
+                <div class="details-main">
+
+
+                    <!-- Blood Requirement -->
+                    <div class="detail-card blood-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="section-label">
+                                    REQUIRED BLOOD
+                                </span>
+
+                                <h3>
+                                    Blood Requirement
+                                </h3>
+
+                            </div>
+
+
+                            <i class="fa-solid fa-droplet"></i>
+
+                        </div>
+
+
+                        <div class="blood-requirement">
+
+                            <div class="blood-type">
+                                O+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    O Positive
+                                </strong>
+
+                                <span>
+                                    2 units required
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="requirement-progress">
+
+                            <div class="progress-top">
+
+                                <span>
+                                    Donation progress
+                                </span>
+
+                                <strong>
+                                    0 / 2 units
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-bar">
+
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Patient Information -->
+                    <div class="detail-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="section-label">
+                                    PATIENT INFORMATION
+                                </span>
+
+                                <h3>
+                                    Patient Details
+                                </h3>
+
+                            </div>
+
+                            <i class="fa-solid fa-user-injured"></i>
+
+                        </div>
+
+
+                        <div class="patient-grid">
+
+                            <div class="patient-item">
+
+                                <span>Patient Name</span>
+
+                                <strong>
+                                    Arjun Kumar
+                                </strong>
+
+                            </div>
+
+
+                            <div class="patient-item">
+
+                                <span>Age</span>
+
+                                <strong>
+                                    28 years
+                                </strong>
+
+                            </div>
+
+
+                            <div class="patient-item">
+
+                                <span>Blood Group</span>
+
+                                <strong class="red-text">
+                                    O+
+                                </strong>
+
+                            </div>
+
+
+                            <div class="patient-item">
+
+                                <span>Units Needed</span>
+
+                                <strong>
+                                    2 Units
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Hospital Information -->
+                    <div class="detail-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="section-label">
+                                    LOCATION
+                                </span>
+
+                                <h3>
+                                    Hospital Information
+                                </h3>
+
+                            </div>
+
+                            <i class="fa-solid fa-hospital"></i>
+
+                        </div>
+
+
+                        <div class="hospital-box">
+
+                            <div class="hospital-icon">
+
+                                <i class="fa-solid fa-hospital"></i>
+
+                            </div>
+
+
+                            <div class="hospital-info">
+
+                                <strong>
+                                    City Care Hospital
+                                </strong>
+
+                                <p>
+                                    24, Main Road, Chennai
+                                </p>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    4.2 km from your location
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="#"
+                                class="map-btn"
+                            >
+
+                                <i class="fa-solid fa-location-arrow"></i>
+
+                                View Map
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Request Reason -->
+                    <div class="detail-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="section-label">
+                                    REQUEST MESSAGE
+                                </span>
+
+                                <h3>
+                                    Why Blood Is Needed
+                                </h3>
+
+                            </div>
+
+                            <i class="fa-regular fa-note-sticky"></i>
+
+                        </div>
+
+
+                        <div class="message-box">
+
+                            <p>
+                                The patient is currently receiving
+                                treatment and requires O+ blood
+                                urgently. Donors who are available
+                                nearby are requested to respond
+                                as soon as possible.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Timeline -->
+                    <div class="detail-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="section-label">
+                                    REQUEST ACTIVITY
+                                </span>
+
+                                <h3>
+                                    Request Timeline
+                                </h3>
+
+                            </div>
+
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+
+                        </div>
+
+
+                        <div class="timeline">
+
+
+                            <div class="timeline-item completed">
+
+                                <div class="timeline-icon">
+
+                                    <i class="fa-solid fa-check"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Request created
+                                    </strong>
+
+                                    <span>
+                                        Today, 08:45 PM
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="timeline-item active">
+
+                                <div class="timeline-icon">
+
+                                    <i class="fa-solid fa-bell"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Donors are being notified
+                                    </strong>
+
+                                    <span>
+                                        Nearby compatible donors
+                                        are being alerted.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-icon">
+
+                                    <i class="fa-solid fa-hand-holding-droplet"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Waiting for donor response
+                                    </strong>
+
+                                    <span>
+                                        Your response will be
+                                        updated here.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     RIGHT COLUMN
+                =================================================== -->
+
+                <aside class="details-side">
+
+
+                    <!-- Urgency Card -->
+                    <div class="side-card urgency-card">
+
+                        <div class="urgency-icon">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                        </div>
+
+
+                        <span class="section-label">
+                            PRIORITY
+                        </span>
+
+
+                        <h3>
+                            Urgent Support Needed
+                        </h3>
+
+
+                        <p>
+                            Please respond only if you are
+                            eligible and available to donate.
+                        </p>
+
+
+                        <div class="time-box">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <div>
+
+                                <strong>
+                                    01:48:32
+                                </strong>
+
+                                <span>
+                                    estimated response window
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Action Card -->
+                    <div class="side-card action-card">
+
+                        <span class="section-label">
+                            YOUR RESPONSE
+                        </span>
+
+
+                        <h3>
+                            Can you help?
+                        </h3>
+
+
+                        <p>
+                            Let the requester know if you
+                            can support this blood request.
+                        </p>
+
+
+                        <button
+                            class="primary-action"
+                            id="acceptRequest"
+                        >
+
+                            <i class="fa-solid fa-hand-holding-droplet"></i>
+
+                            I Can Donate
+
+                        </button>
+
+
+                        <button
+                            class="secondary-action"
+                            id="messageRequester"
+                        >
+
+                            <i class="fa-regular fa-message"></i>
+
+                            Contact Requester
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Safety Card -->
+                    <div class="side-card safety-card">
+
+                        <div class="safety-title">
+
+                            <i class="fa-solid fa-shield-heart"></i>
+
+                            <strong>
+                                Stay Safe
+                            </strong>
+
+                        </div>
+
+
+                        <ul>
+
+                            <li><h6>
+                                Confirm the request before
+                                travelling.</h6>
+                            </li>
+
+                            <li>
+                               <h6>Donate only through a
+                                verified blood centre.</h6>
+                            </li>
+
+                            <li>
+                                Never share sensitive
+                                account information.</h6>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 FOOTER NOTE
+            =================================================== -->
+
+            <div class="bottom-note">
+
+                <i class="fa-solid fa-heart-circle-check"></i>
+
+                <div>
+
+                    <strong><h3>
+                        Every verified donation matters.</h3>
+                    </strong>
+
+                    <h6>
+                        HemoSphere helps connect compatible
+                        donors with genuine blood requests.
+                    </h6>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Request Details JavaScript -->
+    <script src="../js/request-details.js"></script>
+    <script src="../js/theme.js"></script>
+
+</body>
+
+</html>

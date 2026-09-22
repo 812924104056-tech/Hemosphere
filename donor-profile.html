@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Manage your HemoSphere blood donor profile and availability.">
+
+    <title>Donor Profile | HemoSphere</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <!-- Donor Profile CSS -->
+
+    <link rel="stylesheet"
+          href="../css/donor-profile.css">
+          <link rel="stylesheet" href="../css/theme.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar" id="sidebar">
+
+
+    <!-- Brand -->
+
+    <div class="brand">
+
+        <div class="brand-icon">
+
+            <i class="fa-solid fa-droplet"></i>
+
+        </div>
+
+        <div>
+
+            <h2>HemoSphere</h2>
+
+            <span>
+                Emergency Response
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Navigation -->
+
+    <nav class="side-nav">
+
+
+        <a href="dashboard.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a href="search.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <span>
+                Find Donors
+            </span>
+
+        </a>
+
+
+        <a href="blood-request.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-hand-holding-droplet"></i>
+
+            <span>
+                Blood Request
+            </span>
+
+        </a>
+
+
+        <a href="donor-profile.html"
+           class="nav-item active">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>
+                Donor Profile
+            </span>
+
+        </a>
+
+
+        <a href="request-tracking.html"
+           class="nav-item">
+
+            <i class="fa-solid fa-route"></i>
+
+            <span>
+                Track Request
+            </span>
+
+        </a>
+
+
+        <a href="notification.html"
+           class="nav-item">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span>
+                Notifications
+            </span>
+
+            <b class="notification-count">
+                3
+            </b>
+
+        </a>
+
+    </nav>
+
+
+    <!-- Bottom Profile -->
+
+    <div class="sidebar-bottom">
+
+
+        <div class="profile-mini">
+
+            <div class="avatar">
+                M
+            </div>
+
+            <div>
+
+                <strong>
+                    Moulishwaran
+                </strong>
+
+                <small>
+                    Donor Account
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="logout-btn"
+            id="logoutBtn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main class="main-content">
+
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <div class="topbar-title">
+
+            <span>
+                HemoSphere
+            </span>
+
+            <h1>
+                Donor Profile
+            </h1>
+
+        </div>
+
+
+        <div class="topbar-actions">
+
+
+            <a href="notification.html"
+               class="icon-btn">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span class="notification-dot"></span>
+
+            </a>
+
+
+            <a href="donor-profile.html"
+               class="top-profile">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div class="top-profile-info">
+
+                    <strong>
+                        Moulishwaran
+                    </strong>
+
+                    <small>
+                        Donor
+                    </small>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         PAGE
+    ================================================= -->
+
+    <div class="profile-container">
+
+
+        <!-- PAGE HEADING -->
+
+        <section class="page-heading">
+
+            <div>
+
+                <span class="page-label">
+                    DONOR CENTER
+                </span>
+
+                <h2>
+                    Your Donor Profile
+                </h2>
+
+                <p>
+                    Keep your information updated so
+                    people can reach you when blood is needed.
+                </p>
+
+            </div>
+
+
+            <div class="profile-status">
+
+                <span class="status-dot"></span>
+
+                Available to Donate
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROFILE HERO
+        ================================================= -->
+
+        <section class="profile-hero">
+
+
+            <div class="profile-main">
+
+
+                <div class="large-avatar">
+
+                    <span>
+                        M
+                    </span>
+
+                    <div class="verified-badge">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-identity">
+
+                    <div class="verified-name">
+
+                        <h1>
+                            Moulishwaran M.
+                        </h1>
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Verified Donor
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Registered HemoSphere Donor
+                    </p>
+
+
+                    <div class="location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>
+                            Tamil Nadu, India
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Blood Group -->
+
+            <div class="blood-group-box">
+
+                <span>
+                    BLOOD GROUP
+                </span>
+
+                <strong>
+                    O+
+                </strong>
+
+                <small>
+                    Universal donor network
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROFILE GRID
+        ================================================= -->
+
+        <section class="profile-grid">
+
+
+            <!-- =============================================
+                 PERSONAL INFORMATION
+            ============================================== -->
+
+            <div class="profile-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            BASIC INFORMATION
+                        </span>
+
+                        <h3>
+                            Personal Details
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        class="edit-btn"
+                        id="editPersonalBtn">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                        Edit
+
+                    </button>
+
+                </div>
+
+
+                <div class="details-grid">
+
+
+                    <div class="detail-item">
+
+                        <span>
+                            Full Name
+                        </span>
+
+                        <strong>
+                            Moulishwaran M.
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>
+                            Date of Birth
+                        </span>
+
+                        <strong>
+                            21 June 2007
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>
+                            Phone Number
+                        </span>
+
+                        <strong>
+                            +91 8940723708
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>
+                            Email Address
+                        </span>
+
+                        <strong>
+                            moulishwaranmouli15@gmial.com
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>
+                            City
+                        </span>
+
+                        <strong>
+                            Tamil Nadu
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <span>
+                            Donor ID
+                        </span>
+
+                        <strong class="donor-id">
+                            HS-DNR-1048
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DONOR STATUS
+            ============================================== -->
+
+            <div class="profile-card availability-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            DONATION STATUS
+                        </span>
+
+                        <h3>
+                            Donor Availability
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="availability-box">
+
+
+                    <div class="availability-icon">
+
+                        <i class="fa-solid fa-heart-pulse"></i>
+
+                    </div>
+
+
+                    <div class="availability-content">
+
+                        <strong id="availabilityText">
+                            Available
+                        </strong>
+
+                        <p>
+                            You can receive emergency
+                            donor requests.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Toggle -->
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="availabilityToggle"
+                            checked>
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="availability-note">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        You can turn this off anytime if
+                        you are temporarily unavailable.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 DONATION INFORMATION
+            ============================================== -->
+
+            <div class="profile-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            DONATION HISTORY
+                        </span>
+
+                        <h3>
+                            Donation Information
+                        </h3>
+
+                    </div>
+
+
+                    <span class="safe-badge">
+
+                        <i class="fa-solid fa-shield-heart"></i>
+
+                        Private
+
+                    </span>
+
+                </div>
+
+
+                <div class="donation-stats">
+
+
+                    <div class="donation-stat">
+
+                        <div class="donation-stat-icon">
+
+                            <i class="fa-solid fa-droplet"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                03
+                            </strong>
+
+                            <span>
+                                Donations
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="donation-stat">
+
+                        <div class="donation-stat-icon blue">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                15 Jun 2024
+                            </strong>
+
+                            <span>
+                                Last Donation
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="donation-stat">
+
+                        <div class="donation-stat-icon green">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Eligible
+                            </strong>
+
+                            <span>
+                                Current Status
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =============================================
+                 CONTACT PREFERENCE
+            ============================================== -->
+
+            <div class="profile-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            EMERGENCY CONTACT
+                        </span>
+
+                        <h3>
+                            Contact Preference
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-options">
+
+
+                    <label class="contact-option active">
+
+                        <input
+                            type="radio"
+                            name="contactMethod"
+                            value="phone"
+                            checked>
+
+                        <div class="contact-option-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Phone Call
+                            </strong>
+
+                            <span>
+                                Preferred
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-circle-check selected-icon"></i>
+
+                    </label>
+
+
+                    <label class="contact-option">
+
+                        <input
+                            type="radio"
+                            name="contactMethod"
+                            value="notification">
+
+                        <div class="contact-option-icon blue">
+
+                            <i class="fa-regular fa-bell"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                App Notification
+                            </strong>
+
+                            <span>
+                                Instant alert
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-circle-check selected-icon"></i>
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACTION AREA
+        ================================================= -->
+
+        <section class="profile-actions">
+
+
+            <div class="action-message">
+
+                <div class="action-message-icon">
+
+                    <i class="fa-solid fa-shield-heart"></i>
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Your information matters
+                    </strong>
+
+                    <p>
+                        Your donor details are used only to
+                        support emergency blood matching.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="save-btn"
+                id="saveProfileBtn">
+
+                <i class="fa-solid fa-check"></i>
+
+                Save Profile
+
+            </button>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="../js/donor-profile.js"></script>
+<script src="../js/theme.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | HemoSphere</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         LOGIN PAGE
+    =========================================== -->
+
+    <main class="login-page">
+
+        <!-- Left Side -->
+
+        <section class="login-info">
+
+            <a href="../index.html" class="brand">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <span>HemoSphere</span>
+
+            </a>
+
+            <div class="info-content">
+
+                <span class="info-tag">
+                    Intelligent Blood Donation Platform
+                </span>
+
+                <h1>
+                    Connecting Donors.
+                    <br>
+                    <span>Saving Lives.</span>
+                </h1>
+
+                <p>
+                    Sign in to manage your donor profile, find suitable
+                    blood donors, track requests, and stay connected
+                    with the HemoSphere community.
+                </p>
+
+                <div class="info-points">
+
+                    <div class="info-point">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Find suitable blood donors
+                        </span>
+
+                    </div>
+
+                    <div class="info-point">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Manage your donor availability
+                        </span>
+
+                    </div>
+
+                    <div class="info-point">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>
+                            Manage emergency blood requests
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="info-footer">
+                <p>
+                    © 2026 HemoSphere. Connecting Donors. Saving Lives.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Right Side -->
+
+        <section class="login-section">
+
+            <div class="login-card">
+
+                <div class="login-header">
+
+                    <div class="mobile-brand">
+
+                        <i class="fa-solid fa-heart-pulse"></i>
+
+                        <span>HemoSphere</span>
+
+                    </div>
+
+                    <h2>
+                        Welcome Back
+                    </h2>
+
+                    <p>
+                        Sign in to continue to your account
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+
+                <form id="loginForm" novalidate>
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="emailError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#" id="forgotPassword">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="togglePassword"
+                                aria-label="Show password"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="error-message"
+                            id="passwordError"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Remember Me -->
+
+                    <div class="login-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                                name="rememberMe"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+
+                    <button
+                        type="submit"
+                        class="login-submit"
+                    >
+
+                        <span>
+                            Sign In
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- Status Message -->
+
+                    <p
+                        id="loginMessage"
+                        class="login-message"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+
+                <!-- Divider -->
+
+                <div class="divider">
+
+                    <span>OR</span>
+
+                </div>
+
+
+                <!-- Register -->
+
+                <div class="register-text">
+
+                    <p>
+                        Don't have an account?
+                    </p>
+
+                    <a href="register.html">
+                        Create an account
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- Back Home -->
+
+                <a href="../index.html" class="back-home">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back to Home
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         LOGIN JAVASCRIPT
+    =========================================== -->
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>
